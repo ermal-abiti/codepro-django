@@ -1,0 +1,9 @@
+{% extends 'header.html' %}
+{% block title %}Code Pro - Blog Post {{post.id}} {% endblock %}
+{% block content %}
+
+    <h3>{{posts.title}}</h3>
+    <h5>{{posts.date}}</h5>
+    {{posts.post_content|safe|linebreaks}}
+
+{% endblock %}
